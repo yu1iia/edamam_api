@@ -1,0 +1,25 @@
+{
+  "name": "edamam_api",
+  "version": "1.0.0",
+  "description": "food recipe api service",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --env.mode development --config ./webpack/config.js",
+    "build": "webpack --env.mode production --config ./webpack/config.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yu1iia/edamam_api.git"
+  },
+  "author": "yuliia.burko@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yu1iia/edamam_api/issues"
+  },
+  "homepage": "https://github.com/yu1iia/edamam_api#readme",
+  "dependencies": {
+    "webpack-dev-server": "^4.11.1"
+  }
+}
